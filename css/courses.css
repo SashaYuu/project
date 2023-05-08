@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+#primaryMenu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  width: 740px;
+  padding-right: 0px;
+  padding-left: 15px;
+  margin: auto;
+  }
+.primaryWrapper {
+  display: table;
+  width: 100%;
+}
+.brandName {
+  width: 80px;
+  float: left;
+  margin-top: 5px;
+  color: #0e0e0e;
+  font-weight: 300;
+  font-size: 30px;
+margin-left: -300px;  
+}
+
+
+.brandName span {
+  font-size: 55px;
+  color: #ff5200;
+  font-weight: 400;
+}
+.brandName a {
+text-decoration: none;
+color: #333;
+}
+.menu {
+  width: 100%;
+  float: left;
+  background-color: #ffffff;
+  
+}
+.mainMenuItems {
+  float: right;
+  overflow: hidden;
+}
+.mainMenuItems ul {
+  list-style-type: none;
+  
+  
+}
+.mainMenuItems ul li {
+  float: left;
+  
+}
+.mainMenuItems ul li a {
+  text-decoration: none;
+  padding: 24px 12px;
+  color: #0e0e0e;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  
+  }
+.mainMenuItems ul li a:hover {
+  color: #ff5220;
+}
+ 
+ 
+/* secTitle =====*/
+
+.secTitle {
+text-align: center;
+margin-bottom: 40px;
+
+}
+.secTitle h2 {
+font-size: 40px;
+text-transform: uppercase;
+}
+.secTitle h2:after {
+content: "";
+display: block;
+width: 80px;
+border: 2px solid #ff5200;
+margin-top: 15px;
+margin-left: 42%;
+}
+
+
