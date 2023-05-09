@@ -1,7 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+.courseStartBtn a {
+text-decoration: none;
+}
+.courseStartBtn button {
+width: 150px;
+color: #ffffff;
+margin-bottom: 20px;
+background: #ff5200;
+margin: auto;
+padding: 5px 8px;
+border: none;
+margin-bottom: 20px;
+margin-top: 20px;
+margin-left: 30px;
+font-size: 18px;
+font-weight: 400;
+border-radius: 3px;
+transition: 0.3s;
+}
+.courseStartBtn a button:hover {
+color: #ffffff;
+background-color: #333;
+cursor: pointer;
+}
 
 
 #primaryMenu {

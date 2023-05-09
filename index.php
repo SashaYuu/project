@@ -20,18 +20,18 @@
         <div class="mainMenuItems">
           <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="page/moreabout.php">ABOUT</a></li>
+            <li><a href="page/aboutUs/index.php">ABOUT</a></li>
             <li><a href="page/course.php"> COURSE </a> </li>
             <li><a href="service.php">SERVICES</a></li>
             <li><a href="contact.php">CONTACT</a></li>
             <li><a href="search/search_engine.php">SEARCH</a></li>
-            <li><a href="page/uppgift.php">UPPGIFT</a></li>
-            <li><a href="contacts/index.php">CONTACTSS</a></li>
+
+
             <?php
             session_start();
             if (isset($_SESSION['username'])) {
               // If a user is logged in, display the mypage page
-              echo '<li><a href="page/mypage.php">mypage</a></li>';
+              echo '<li><a href="page/mypagee/index.php">mypage</a></li>';
             } else {
               // If no user is logged in, display the login page
               echo '<li><a href="login/login.php">login</a></li>';
@@ -65,7 +65,7 @@
       <div class="coverContant">
         <h2>Sumo Coder</h2>
         <p>Interactive Courses with one of our finest teachers <span>.Sumo Coder a new way of coding for you </span> </p>
-        <button class="coverBtn"> work with us </button>
+        <button class="coverBtn" onclick="window.location.href='page/aboutUs/index.php'"> About Us </button>
       </div>
     </div>
   </section>
@@ -86,11 +86,7 @@
           <h2> About US </h2>
           <p> We are a company that sells coding courses for people who just started coding. <span> We have many branches all over the world</span>. You can check for more information on our about page.<br>
           </p>
-          <div class="aboutReadMoreBtn">
-            <a href="page/moreabout.html"> Read More </a>
 
-          </div>
-          <h2> Log in </h2>
 
         </div>
 
@@ -109,7 +105,7 @@
       <div class="talkDetails">
         <h2>Any type of quation & discussion. </h2>
         <p>Reach Us Here.... </p>
-        <a href="mailto:SumoCoder@gmail.com">Mail here </a>
+        <a href="contact.php">Mail here </a>
 
       </div>
 
@@ -144,7 +140,7 @@
 
 
           </div>
-          <div class="srBtn"><a href="contact.html"> Contact us for any questions </a></div>
+          <div class="srBtn"><a href="contact.php"> Contact us for any questions </a></div>
         </div>
 
 
@@ -158,7 +154,7 @@
             <p> is the standard markup language for documents designed to be displayed in a web browser. At the end of the course you will learn how to code and make a full working website. </p>
 
           </div>
-          <div class="srBtn"><a href="contact.html"> Contact us for any questions </a></div>
+          <div class="srBtn"><a href="contact.php"> Contact us for any questions </a></div>
         </div>
 
 
@@ -172,7 +168,7 @@
 
           </div>
 
-          <div class="srBtn"><a href="contact.html"> Contact us for more information </a></div>
+          <div class="srBtn"><a href="contact.php"> Contact us for more information </a></div>
         </div>
 
 
@@ -260,7 +256,7 @@
     <p> Hey,good news we launched online learning course. If you want to join our online course. Just click below! </p>
     <div class="courseBtnCenter">
 
-      <div class="srBtn"><a href="page/course.html"> Courses </a></div>
+      <div class="srBtn"><a href="page/course.php"> Courses </a></div>
 
 
 
@@ -319,12 +315,10 @@
               <div class="fboxLinks">
                 <h2>SumoCoder </h2>
                 <ul>
-                  <li> <a href="index.php"> Home </a> </li>
-                  <li> <a href="page/moreabout.html"> About </a> </li>
-                  <li> <a href="page/course.html"> Course </a> </li>
-                  <li> <a href="service.html"> Services </a> </li>
-                  <li> <a href="service.html"> Log in </a> </li>
-
+                  <li><a href="index.php">HOME</a></li>
+                  <li><a href="page/aboutUs/index.php">ABOUT</a></li>
+                  <li><a href="page/course.php"> COURSES </a> </li>
+                  <li><a href="service.php">SERVICES</a></li>
 
                 </ul>
               </div>

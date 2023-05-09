@@ -11,14 +11,10 @@
 }
 
 
-h6{
-	
-	color: orangered;
-	font-size: 44px;
-}
+
  
 #primaryMenu {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -56,13 +52,16 @@ color: #333;
 }
 .menu {
   width: 100%;
-  float: left;
   background-color: #ffffff;
-  
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 .mainMenuItems {
   float: right;
   overflow: hidden;
+  
 }
 .mainMenuItems ul {
   list-style-type: none;
@@ -72,6 +71,21 @@ color: #333;
 .mainMenuItems ul li {
   float: left;
   
+}
+
+
+#submit-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+  z-index: 9999;
 }
 .mainMenuItems ul li a {
   text-decoration: none;
@@ -405,6 +419,25 @@ cursor: pointer;
 background-color: #000000;
 }
 
+#about-us {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+  padding: 50px 0;
+}
+
+.section-heading {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.section-description {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
 .brandNameFooter {
   text-align: center;
   color: #0e0e0e;
@@ -413,9 +446,7 @@ background-color: #000000;
   
   
 }
-h5{
-	color: white;
-}
+
 
 .brandNameFooter span {
   font-size: 55px;
@@ -559,83 +590,95 @@ margin-top: 10px;
 
 /* my skills start=====*/
 .skills {
-width: 600px;
+  width: 800px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
 }
 .skillicon {
 font-size: 25px;
 color: red;
 }
-.skills ul li {
-position: relative;
-list-style: none;
-margin: 50px 0;
-font-weight: 500;
-text-transform: uppercase;
-}
-.skills ul li:before {
-content: "";
-position: absolute;
-top: calc(100% + 10px);
-left: 0;
-width: 100%;
-height: 10px;
-background-color: rgba(255,0,0,0.2);
-border-radius: 100px;
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+.skills ul li {
+  position: relative;
+  margin-bottom: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.skills ul li:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255,0,0,0.2);
+  border-radius: 100px;
+}
 
 .skills ul li:after {
-content: "";
-position: absolute;
-top: calc(100% + 10px);
-left: 0;
-width: 0;
-height: 10px;
-background-color: rgba(255,0,0,1);
-border-radius: 100px;
-animation-duration: 0.6s;
-animation-timing-function: ease;
-animation-fill-mode: forwards;
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 10px;
+  background-color: rgba(255,0,0,1);
+  border-radius: 100px;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .skills ul li.html:after {
-animation-name: html;
+  animation-name: html;
 }
 
 @keyframes html {
-    to {
+  to {
     width: 90%;
-    }
+  }
 }
 
 .skills ul li.css:after {
-animation-name: css;
+  animation-name: css;
 }
 
 @keyframes css {
-    to {
+  to {
     width: 80%;
-    }
+  }
 }
-
 
 .skills ul li.js:after {
   animation-name: js;
-   }
-   
-@keyframes js {
-    to {
-    width: 60%;
-}
 }
 
-.skillpercent {
-margin-left: 220px;
-color: rgb(255,0,0);
-font-size: 20px;
-font-weight: 500;
+@keyframes js {
+  to {
+    width: 60%;
+  }
 }
-/* my skills end=====*/
+
+.skills ul li h3 {
+  margin: 0;
+  font-size: 25px;
+  color: red;
+}
+
+.skills ul li .skillpercent {
+  margin-left: 220px;
+  color: rgb(255,0,0);
+  font-size: 20px;
+  font-weight: 500;
+}/* my skills end=====*/
 
 #aboutSocialMenu {
 background-color: ;
@@ -801,20 +844,53 @@ font-size: 20px;
 }
 .closebtn {
 position: absolute;
-top: 10px;
+top: 500px;
 right: 15px;
 color: red;
-font-size: 35px;
+font-size: 80px;
 cursor: pointer;
 }
+
+/* Style the button */
+.submitBtn {
+  background-color: #c78a3f; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Add some padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button a block element */
+  font-size: 16px; /* Set font size */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Add cursor on hover */
+}
+
+/* Change the background color on hover */
+.submitBtn:hover {
+  background-color: #3e8e41;
+}
+
 
 
 /* photo gallery section end====*/
 
-.printbtn {
-margin-top: 50px;
-text-align: center;
+/* Style the button */
+.printBtn button {
+  background-color: #c78a3f; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Add some padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button a block element */
+  font-size: 16px; /* Set font size */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Add cursor on hover */
+  margin-top: 10px;
+
 }
-.printbtn button {
-font-size: 50px;
+
+/* Change the background color on hover */
+.printBtn button:hover {
+  background-color: #00698C;
 }

@@ -1,4 +1,8 @@
 <?php
+echo "('The server.php file is not working.')";
+// rest of the code
+?>
+<?php
 session_start();
 
 // initializing variables
@@ -24,12 +28,12 @@ if (isset($_POST['reg_user'])) {
     $name = strip_tags($name);
     $hashpassword = password_hash($password, PASSWORD_DEFAULT);
 
-   
 
 
 
 
-   if (empty($username)) {
+
+    if (empty($username)) {
 
         array_push($errors, "Username is required");
     }
@@ -47,7 +51,7 @@ if (isset($_POST['reg_user'])) {
 
     // first check the database to make sure 
     // a user does not already exist with the same username and/or email
-    
+
     $user_check_query = "SELECT * FROM forumm WHERE username='$username' OR email='$email' LIMIT 1";
     $result = mysqli_query($db, $user_check_query);
     $user = mysqli_fetch_assoc($result);
@@ -95,15 +99,24 @@ if (isset($_POST['login_user'])) {
         $results = mysqli_query($db, $query);
         $row = mysqli_fetch_assoc($results);
         if (mysqli_num_rows($results) == 1 && password_verify($password, $row['password'])) {
-            
+
             $_SESSION['username'] = $_POST['username'];
-//            print_r($_SESSION);
-            header('location: ../page/mypage.php');
+
+            // Store the URL of the previous page the user was trying to access
+            if (isset($_SESSION['redirect_url'])) {
+                $redirect_url = $_SESSION['redirect_url'];
+                unset($_SESSION['redirect_url']);
+                header("Location: $redirect_url");
+            } else {
+                header('Location: ../page/mypagee/index.php');
+            }
             exit();
         } else {
             array_push($errors, "Wrong username/password combination");
         }
     }
+
+
 }
 
 ?>

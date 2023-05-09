@@ -79,7 +79,7 @@
   <section id="courseDetails">
     <div class="container">
       <div class="secTitle">
-        <h2> OUR COURSE </h2>
+        <h2> OUR COURSES </h2>
       </div>
       <div class="courseDetailsWrapper">
         <div class="singleCourseDetails">
@@ -270,7 +270,7 @@
               </ul>
             </div>
             <div class="courseStartBtn">
-              <a href="courseform.html">
+              <a href="courseform.php">
                 <button> GET STARTED </button>
               </a>
             </div>
@@ -292,7 +292,7 @@
               </ul>
             </div>
             <div class="courseStartBtn">
-              <a href="courseform.html"><button> GET STARTED </button></a>
+              <a href="courseform.php"><button> GET STARTED </button></a>
             </div>
           </div>
 
@@ -312,7 +312,7 @@
               </ul>
             </div>
             <div class="courseStartBtn">
-              <a href="courseform.html"><button> GET STARTED </button></a>
+              <a href="courseform.php"><button> GET STARTED </button></a>
             </div>
           </div>
 
@@ -364,10 +364,10 @@
               <div class="fboxLinks">
                 <h2>USEFULLINKS </h2>
                 <ul>
-                  <li> <a href="../index.html"> Home </a> </li>
-                  <li> <a href="moreabout.html"> About </a> </li>
-                  <li> <a href="course.html"> Course </a> </li>
-                  <li> <a href="../service.html"> Services </a> </li>
+                  <li> <a href="../index.php"> Home </a> </li>
+                  <li> <a href="../aboutUs/index.php"> About </a> </li>
+                  <li> <a href="../course.php"> Course </a> </li>
+                  <li> <a href="../service.php"> Services </a> </li>
 
                 </ul>
               </div>

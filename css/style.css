@@ -53,6 +53,10 @@ cursor: pointer;
   width: 100%;
   float: left;
   background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+  float: right;
+  overflow: hidden;
+  
   
 }
 .mainMenuItems {

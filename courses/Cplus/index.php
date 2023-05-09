@@ -129,12 +129,20 @@
           <div class="u-layout-row">
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
               <div class="u-container-layout u-valign-top u-container-layout-1">
+
                 <h1 class="u-text u-text-white u-title u-text-1">C++</h1>
                 <p class="u-custom-font u-font-merriweather u-text u-text-palette-1-light-3 u-text-2"> C++ is a general-purpose programming language used to create high-performance applications, operating systems, device drivers, and other software. It is an extension of the C programming language and was developed in the early 1980s by Bjarne Stroustrup at Bell Labs. C++ is a powerful language that provides a wide range of features, including object-oriented programming, templates, and low-level memory manipulation. It is used in a variety of fields, including finance, gaming, and scientific research. C++ is a popular choice for developing large-scale, performance-c</p>
+                <div class="courseStartBtn">
+                  <a href="../../page/courseform.php">
+                    <button> Apply for course </button>
+                  </a>
+                </div>
               </div>
+
             </div>
             <div class="u-align-right u-container-style u-layout-cell u-size-30 u-layout-cell-2">
               <div class="u-container-layout u-container-layout-2">
+
                 <div class="u-expand-resize u-image u-image-circle u-image-1" data-image-width="1024" data-image-height="512"></div>
               </div>
             </div>

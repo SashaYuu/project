@@ -116,8 +116,8 @@ img{
 }
 .profile-photo{
     cursor: pointer;
-    border: 6px solid transparent;
-    border-image: linear-gradient(to right, red , yellow);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, black , black);
     border-image-slice: 1;
     width: 150px;
     height: 150px;

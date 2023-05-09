@@ -109,14 +109,23 @@
                   <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">HTML</h2>
                 </div>
               </div>
+
               <h6 class="u-align-left u-custom-font u-font-arial u-text u-text-body-alt-color u-text-2"> HTML is a markup language that is used to create the structure and content of web pages. It allows web developers to add text, images, videos, and other types of content to web pages, and to format that content in a way that makes it easy for users to read and navigate.One of the key benefits of HTML is its simplicity.&nbsp;<br>
                 <br>The language is easy to learn and use, even for those who are new to web development. By using HTML tags to define the structure and content of a web page, developers can create complex layouts and designs without needing to know complex programming languages
               </h6>
+              <div class="courseStartBtn">
+                <a href="../../page/courseform.php">
+                  <button> Apply for course </button>
+                </a>
+              </div>
             </div>
           </div>
+
           <div class="u-align-left u-container-style u-image u-layout-cell u-size-37-lg u-size-37-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="750" data-image-width="1000" data-image-height="439">
             <div class="u-container-layout u-container-layout-3"></div>
+
           </div>
+
         </div>
       </div>
     </div>
