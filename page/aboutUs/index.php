@@ -25,10 +25,12 @@
         <div class="mainMenuItems">
           <ul>
             <li><a href="../../index.php">HOME</a></li>
-            <li><a href="../../page/moreabout.php">ABOUT</a></li>
+            <li><a href="index.php">ABOUT</a></li>
             <li><a href="../../page/course.php"> COURSE </a> </li>
             <li><a href="../../service.php">SERVICES</a></li>
             <li><a href="../../contact.php">CONTACT</a></li>
+            <li><a href="../../search/search_engine.php">SEARCH</a></li>
+
 
 
             <?php

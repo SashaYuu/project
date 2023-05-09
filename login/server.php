@@ -1,5 +1,5 @@
 <?php
-echo "('The server.php file is not working.')";
+// echo "('The server.php file is not working.')";
 // rest of the code
 ?>
 <?php
@@ -74,7 +74,7 @@ if (isset($_POST['reg_user'])) {
         mysqli_query($db, $query);
 
         $_SESSION['username'] = $username;
-        header('location: ../page/mypage.php');
+        header('location: ../index.php');
         exit();
     }
 }

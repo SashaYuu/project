@@ -19,10 +19,12 @@
         <div class="mainMenuItems">
           <ul>
             <li><a href="../index.php">HOME</a></li>
-            <li><a href="moreabout.php">ABOUT</a></li>
+            <li><a href="../page/aboutUs/index.php">ABOUT</a></li>
             <li><a href="course.php"> COURSE </a> </li>
             <li><a href="../service.php">SERVICES</a></li>
             <li><a href="../contact.php">CONTACT</a></li>
+            <li><a href="../search/search_engine.php">SEARCH</a></li>
+
             <?php
             session_start();
 
@@ -45,8 +47,8 @@
               $loggedIn = false;
             }
             ?>
-            <li><a href="<?php echo $loggedIn ? 'mypage.php' : 'login/login.php'; ?>">
-                <?php echo $loggedIn ? 'MYPAGE' : 'LOGIN'; ?>
+            <li><a href="<?php echo $loggedIn ? 'mypagee/index.php' : '../login/login.php'; ?>">
+                <?php echo $loggedIn ? 'PROFILE' : 'LOGIN'; ?>
               </a></li>
 
 
@@ -365,9 +367,10 @@
                 <h2>USEFULLINKS </h2>
                 <ul>
                   <li> <a href="../index.php"> Home </a> </li>
-                  <li> <a href="../aboutUs/index.php"> About </a> </li>
-                  <li> <a href="../course.php"> Course </a> </li>
+                  <li> <a href="../page/aboutUs/index.php"> About </a> </li>
+                  <li> <a href="course.php"> Course </a> </li>
                   <li> <a href="../service.php"> Services </a> </li>
+
 
                 </ul>
               </div>

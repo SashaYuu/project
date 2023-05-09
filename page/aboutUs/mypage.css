@@ -237,6 +237,7 @@ color: #333;
   background-color: #ffffff; 
   margin-top: -22px;
   border-bottom: 1px solid #ccc;
+  height: 100px;
 }
 .mainMenuItems ul li a {
   text-decoration: none;

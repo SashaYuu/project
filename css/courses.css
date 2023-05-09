@@ -68,6 +68,9 @@ color: #333;
   width: 100%;
   float: left;
   background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  height: 100px;
+
   
 }
 .mainMenuItems {
@@ -93,6 +96,7 @@ color: #333;
   font-family: Roboto;
   letter-spacing: 1px;
   transition: 0.3s;
+  margin-top:-10px
   
   }
 .mainMenuItems ul li a:hover {

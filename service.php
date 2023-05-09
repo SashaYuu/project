@@ -19,39 +19,23 @@
         <div class="mainMenuItems">
           <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="page/moreabout.php">ABOUT</a></li>
+            <li><a href="page/aboutUs/index.php">ABOUT</a></li>
             <li><a href="page/course.php"> COURSE </a> </li>
             <li><a href="service.php">SERVICES</a></li>
             <li><a href="contact.php">CONTACT</a></li>
-            <li><a href="page/uppgift.php">UPPGIFT</a></li>
+            <li><a href="search/search_engine.php">SEARCH</a></li>
+
+
             <?php
             session_start();
-
-            // Check if the user is logged in
             if (isset($_SESSION['username'])) {
-              // Query the database to check if the user is valid
-              // Replace "your_db_name", "your_db_username", "your_db_password", and "your_table_name" with your actual values
-              $conn = mysqli_connect("localhost", "root", "", "forum");
-              $username = $_SESSION['username'];
-              $query = "SELECT * FROM forumm WHERE username='$username'";
-              $result = mysqli_query($conn, $query);
-
-              // If there is a result, the user is valid and logged in
-              if (mysqli_num_rows($result) > 0) {
-                $loggedIn = true;
-              } else {
-                $loggedIn = false;
-              }
+              // If a user is logged in, display the mypage page
+              echo '<li><a href="page/mypagee/index.php">PROFILE</a></li>';
             } else {
-              $loggedIn = false;
+              // If no user is logged in, display the login page
+              echo '<li><a href="login/login.php">LOGIN</a></li>';
             }
             ?>
-            <li><a href="<?php echo $loggedIn ? 'page/mypage.php' : 'login/login.php'; ?>">
-                <?php echo $loggedIn ? 'MYPAGE' : 'LOGIN'; ?>
-              </a></li>
-
-
-
 
 
 
@@ -93,7 +77,7 @@
             <p> We will create a functional and running website for you. The website will run on our network for free and you will have full access to our network. </p>
 
           </div>
-          <div class="srBtn"><a href="contact.html"> Contact </a></div>
+          <div class="srBtn"><a href="contact.php"> Contact </a></div>
         </div>
 
 
@@ -109,7 +93,7 @@
             <p>&nbsp; </p>
 
           </div>
-          <div class="srBtn"><a href="contact.html"> Contact </a></div>
+          <div class="srBtn"><a href="contact.php"> Contact </a></div>
         </div>
 
 
@@ -123,7 +107,7 @@
 
           </div>
 
-          <div class="srBtn"><a href="contact.html"> Contact </a></div>
+          <div class="srBtn"><a href="contact.php"> Contact </a></div>
         </div>
 
 
@@ -166,12 +150,13 @@
 
             <div class="fbox">
               <div class="fboxLinks">
-                <h2>USEFULLINKS </h2>
+                <h2>SumoCoder </h2>
                 <ul>
-                  <li> <a href="index.html"> Home </a> </li>
-                  <li> <a href="page/moreabout.html"> About </a> </li>
-                  <li><a href="page/course.html"> Course </a> </li>
-                  <li> <a href="service.html"> Services </a> </li>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="page/aboutUs/index.php">About</a></li>
+                  <li><a href="page/course.php"> Course </a> </li>
+                  <li><a href="service.php">Services</a></li>
+
                 </ul>
               </div>
             </div>

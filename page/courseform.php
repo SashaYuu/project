@@ -34,8 +34,7 @@ header("location: ../login/login.php");
             <li><a href="service.php">SERVICES</a></li>
             <li><a href="contact.php">CONTACT</a></li>
             <li><a href="search/search_engine.php">SEARCH</a></li>
-            <li><a href="page/uppgift.php">UPPGIFT</a></li>
-            <li><a href="contacts/index.php">CONTACTSS</a></li>
+>
             <?php
             if (isset($_SESSION['username'])) {
               // If a user is logged in, display the mypage page

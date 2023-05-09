@@ -1,7 +1,6 @@
 <?php
 require('../../login/server.php');
 
-session_start();
 if ($_SESSION['username']) {
 
 
@@ -49,7 +48,6 @@ if ($_SESSION['username']) {
 <meta charset="UTF-8">
 
 <script src="https://kit.fontawesome.com/4563b32afa.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="../css/page.css" type="text/css" />
 </head>
 
 <body>
@@ -66,12 +64,8 @@ if ($_SESSION['username']) {
             <li><a href="../courses/html/index.php">html</a></li>
             <li><a href="../courses/Cplus/index.php">c++</a></li>
             <li><a href="../login/update.php">UPDATE</a></li>
-            <a href="../logout.php">Logout</a>
+            <li><a href="../logout.php">LOGOUT</a></li>
 
-
-
-
-            <li><a href="uppgift.html">UPPGIFT</a></li>
 
 
           </ul>
@@ -111,7 +105,7 @@ if ($_SESSION['username']) {
     <title>Page 4</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="Page-4.css" media="screen">
-    <link rel="stylesheet" href="../../css/page.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/courses.css" type="text/css" />
 
     <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>

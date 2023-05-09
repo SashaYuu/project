@@ -31,7 +31,7 @@
             session_start();
             if (isset($_SESSION['username'])) {
               // If a user is logged in, display the mypage page
-              echo '<li><a href="page/mypagee/index.php">mypage</a></li>';
+              echo '<li><a href="page/mypagee/index.php">PROFILE</a></li>';
             } else {
               // If no user is logged in, display the login page
               echo '<li><a href="login/login.php">login</a></li>';
@@ -315,10 +315,10 @@
               <div class="fboxLinks">
                 <h2>SumoCoder </h2>
                 <ul>
-                  <li><a href="index.php">HOME</a></li>
-                  <li><a href="page/aboutUs/index.php">ABOUT</a></li>
-                  <li><a href="page/course.php"> COURSES </a> </li>
-                  <li><a href="service.php">SERVICES</a></li>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="page/aboutUs/index.php">About</a></li>
+                  <li><a href="page/course.php"> Course </a> </li>
+                  <li><a href="service.php">Services</a></li>
 
                 </ul>
               </div>

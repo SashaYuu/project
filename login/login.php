@@ -1,7 +1,5 @@
-
-
 <?php include('server.php') ?>
-    
+
 <!DOCTYPE html>
 <html>
 
@@ -30,8 +28,10 @@
         </div>
         <p>
             Not yet a member? <a href="register.php"> Sign up</a>
-                <br> 
-            Are you an Admin?<a   href = "./admin_login.php" class=""> Admin Log In</a>
+            <br>
+            Are you an Admin?<a href="./admin_login.php" class=""> Admin Log In</a>
+            <br>  <a href="../index.php" class=""> HOME</a>
+
 
         </p>
     </form>
