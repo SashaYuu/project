@@ -2,8 +2,6 @@
 require('../../login/server.php');
 
 if ($_SESSION['username']) {
-
-
 } else {
   header("location: ../../login/login.php");
 }
@@ -55,30 +53,30 @@ if ($_SESSION['username']) {
 
     <div class="primaryWrapper">
 
+      <div class="containerNav">
+        <div class="menu">
+          <div class="mainMenuItems">
+            <ul>
+              <li><a href="../../index.php">HOME</a></li>
+              <li><a href="../courses/python/index.php">python</a></li>
+              <li><a href="../courses/html/index.php">html</a></li>
+              <li><a href="../courses/Cplus/index.php">c++</a></li>
+              <li><a href="../login/update.php">UPDATE</a></li>
+              <li><a href="../logout.php">LOGOUT</a></li>
 
-      <div class="menu">
-        <div class="mainMenuItems">
-          <ul>
-            <li><a href="../../index.php">HOME</a></li>
-            <li><a href="../courses/python/index.php">python</a></li>
-            <li><a href="../courses/html/index.php">html</a></li>
-            <li><a href="../courses/Cplus/index.php">c++</a></li>
-            <li><a href="../login/update.php">UPDATE</a></li>
-            <li><a href="../logout.php">LOGOUT</a></li>
 
 
+            </ul>
+          </div>
+          <div class="container">
+            <div class="brandName"> <a href="../index.html">
+                <p><span>S</span>UMO</p>
+              </a></div>
 
-          </ul>
+          </div>
         </div>
-        <div class="container">
-          <div class="brandName"> <a href="../index.html">
-              <p><span>S</span>UMO</p>
-            </a></div>
 
-        </div>
       </div>
-
-    </div>
 
 
   </header>

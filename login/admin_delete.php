@@ -1,5 +1,8 @@
 <?php
-require('../login/server.php');
+require('server.php');
+
+session_start();
+require('server.php');
 
 if ($_SESSION['adminusername']) {
 } else {

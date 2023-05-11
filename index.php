@@ -34,7 +34,7 @@
               echo '<li><a href="page/mypagee/index.php">PROFILE</a></li>';
             } else {
               // If no user is logged in, display the login page
-              echo '<li><a href="login/login.php">login</a></li>';
+              echo '<li><a href="login/login.php">LOGIN</a></li>';
             }
             ?>
 
